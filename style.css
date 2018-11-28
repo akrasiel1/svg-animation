@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#baloon {
+    animation: float 12s ease-in-out infinite;
+}
+
+
+#cloud-1 {
+    animation: move1 15s linear infinite;
+}
+
+#cloud-3 {
+    animation: move3 22s linear infinite;
+}
+
+#cloud-2 {
+    animation: move2 18s linear infinite;
+}
+
+
+
+/***************
+*              *
+*  KEYFRAMES   *
+*              *
+***************/
+
+@keyframes move1 {
+    from {
+        transform: translateX(-300px);
+    }
+    to {
+        transform: translateX(900px);
+    }
+}
+
+@keyframes move2 {
+    from {
+        transform: translateX(-600px);
+    }
+    to {
+        transform: translateX(900px);
+    }
+}
+
+@keyframes move3 {
+    from {
+        transform: translateX(-600px);
+    }
+    to {
+        transform: translateX(900px);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    75% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
